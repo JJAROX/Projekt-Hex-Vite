@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#buttons-section {
+  width: 17.5%;
+  background-color: rgb(206, 204, 204);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#hex-section {
+  width: 65%;
+  display: flex;
+  position: relative;
+}
+
+#array-section {
+  width: 17.5%;
+  background-color: rgb(237, 237, 237);
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  max-height: 100vh;
+  color: white;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#size-select {
+  width: 3em;
+  margin-left: 5px;
+  height: 1.5em;
+}
+
+p {
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+button {
+  width: 14em;
+  align-self: center;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+button:hover {
+  background-color: rgb(167, 167, 167);
+}
+
+.hexagon-container {
+  width: 100px;
+  height: 115.5px;
+  position: relative;
+  left: 20px;
+}
+
+.hexagon {
+  width: 100%;
+  padding-bottom: 115.5%;
+  position: absolute;
+  background-color: black;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transform: rotate(30deg);
+}
+
+.black-text {
+  color: black;
+}
